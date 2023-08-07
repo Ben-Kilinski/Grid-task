@@ -1,0 +1,58 @@
+body{
+    margin: 0%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    "HEADER HEADER HEADER HEADER"
+    "SIDEBAR MAIN MAIN MAIN"
+    "SIDEBAR MAIN MAIN MAIN"
+    "SIDEBAR MAIN MAIN MAIN"
+    "FOOTER FOOTER FOOTER FOOTER";    
+}
+
+.children1{
+    background-color: burlywood;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-area: HEADER;
+    height: 20vh;
+}
+
+.children2{
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-area: MAIN;
+}
+
+.children3{
+    background-color: purple;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-area: FOOTER;
+}
+
+.children4{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-area: SIDEBAR;
+}
